@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" >
+
+            <EditText
+                android:id="@+id/editText_add_input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.49"
+                android:hint="Input Name" >
+            </EditText>
+
+            <Button
+                android:id="@+id/button_add_input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="addInput"
+                android:text="Add" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gridView_inputs"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:columnWidth="60dp"
+            android:fadeScrollbars="false"
+            android:horizontalSpacing="5dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth" >
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" >
+
+            <EditText
+                android:id="@+id/editText_add_output"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.49"
+                android:hint="Output Name" >
+            </EditText>
+
+            <Button
+                android:id="@+id/button_add_output"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="addOutput"
+                android:text="Add" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gridView_outputs"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:columnWidth="60dp"
+            android:fadeScrollbars="false"
+            android:horizontalSpacing="5dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth" >
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" >
+
+            <EditText
+                android:id="@+id/editText_add_internal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.49"
+                android:hint="Internal Name" >
+            </EditText>
+
+            <Button
+                android:id="@+id/button_add_internal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="addInternal"
+                android:text="Add" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gridView_internals"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:columnWidth="60dp"
+            android:fadeScrollbars="false"
+            android:horizontalSpacing="5dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth" >
+        </GridView>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Design"
+        android:inputType="textMultiLine"
+        android:paddingTop="5dp" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btton_clear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clearFields"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/btton_done"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="sendReader"
+            android:text="Done" />
+    </LinearLayout>
+
+</LinearLayout>
